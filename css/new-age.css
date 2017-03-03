@@ -150,14 +150,15 @@ header {
   position: relative;
   width: 100%;
   min-height: auto;
-  overflow-y: hidden;
   background: url("../img/bg-pattern.png"), #7b4397;
+  overflow-y: hidden;
   /* fallback for old browsers */
   background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
   /* Chrome 10-25, Safari 5.1-6 */
   background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
+  
 }
 header .header-content {
   text-align: center;
@@ -188,9 +189,10 @@ header .device-container {
 header .device-container .screen img {
   border-radius: 3px;
 }
+/*
 @media (min-width: 768px) {
   header {
-    min-height: 100%;
+    min-height: 20%;
   }
   header .header-content {
     text-align: left;
@@ -209,7 +211,8 @@ header .device-container .screen img {
   }
   header .device-container {
     max-width: none;
-    max-height: calc(0vh);
+
+    max-height: calc(0vh); 
     margin: 100px auto 0;
   }
 }
@@ -218,6 +221,9 @@ header .device-container .screen img {
     font-size: 50px;
   }
 }
+
+*/
+/*HEADER STUFF HERE*/
 section {
   padding: 100px 0;
 }
@@ -369,11 +375,16 @@ section.contact ul.list-social li.social-google-plus a {
 section.contact ul.list-social li.social-google-plus a:hover {
   background-color: #d73925;
 }
+
+/*FOOTER HERE */
 footer {
   background-color: #222222;
   padding: 25px 0;
   color: rgba(255, 255, 255, 0.3);
   text-align: center;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
 }
 footer p {
   font-size: 12px;
